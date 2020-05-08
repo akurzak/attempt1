@@ -1,13 +1,95 @@
-<! doCtype html5      >
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Aaron's Blog</title>
+    <title>Heading elements</title>
   </head>
-  <header>
-    Let's make a change today
-  </header>
   <body>
-This is the first entry today.
+    <header> This is the header element <nav> This is the navigation bar </nav>
+    </header>
+    <h1 id="top">Week 1 of Johns Hopkins HTML / CSS / JavaScript Course</h1>
+    <h2>Table of Contents</h2>
+      <section>
+        <ul>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#cer">Character Entity References</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </section>
+    <section id="section1">Section</section>
+      <article>Article 1</article>
+      <article>Article 2</article>
+        <aside>Some (a)side information</aside>
+    <h2 id="lists">Lists</h2>
+      <h3>Unordered lists</h3>
+        <div>
+          My typical dinner list:
+          <ul>
+            <li>Bread</li>
+            <li>Cookies</li>
+              <ul>
+                <li>Milk</li>
+                <li>Dough</li>
+              </ul>
+            <li>Milk</li>
+            <li>Nutella</li>
+        </ul>
+        </div>
+      <h3>Ordered Lists</h3>
+        <div>
+          My typical dinner list:
+          <ol>
+            <li>Bread</li>
+            <li>Cookies</li>
+              <ol>
+                <li>Milk</li>
+                <li>Dough</li>
+              </ol>
+            <li>Milk</li>
+            <li>Nutella</li>
+        </ol>
+        </div>
+    <h2 id="cer">Character Entity References</h2>
+      <h3>Don't be afraid to be &lt; than a 100% success &amp &gt more: </h3>
+        <p>"It is not the &copy; critic who counts, this is testing to make the page wide enough, neither in victory&nbsp;not&nbsp;in&nbsp;defeat."</p>
+        <p>Change " into & quot ; in order to show properly in emails, for example: "&quot;It is not the &copy; critic who counts, this is testing to make the page wide enough, neither in victory&nbsp;not&nbsp;in&nbsp;defeat.&quot;</p>
+    <h2 id="links">Links</h2>
+      <h3>Internal links</h3>
+        <section>
+          We can link to a file in the same directory. Title is for the visually impaired.
+          <a href="index.html" title="Index. Check it out!">Linking to a file in the same directory.</a>
+          <a href="index.html" title="a tag is both phrasing and content element">
+              <div>aA tag can be used both block level and inline. Use this to click on a whole region (for example company logo on website)</div>
+            </a>
+        </section>
+      <h3>External links</h3>
+        <section>
+          <p>
+            Let's link to NBA.com and open it in a new tab.
+            <a href="http://www.nba.com" target="_blank" title="NBA Link! Open in new tab">NBA &copy; link</a>
+        </section>
+      <h3>Fragment identifier links (important for single page applications)</h3>
+        <section>
+          <ul>
+            <li><a href="#section1">#Section1</a></li>
+          </ul>
+        </section>
+  <h2 id="text">Text</h2>
+    <section>
+      Organizations increasingly rely upon small groups and teams as the locus of work (Mathieu, Hollenbeck, Van Knippenberg, & Ilgen, 2017). However, we are often surprised by which teams perform well and which do not, since we lack good tools for predicting group performance. By contrast, for over 100 years, psychology has had good tools for predicting many kinds of individual performance, including— especially—individual intelligence tests (Schmidt & Hunter, 1998). Despite controversy about what causes individual intelligence or whether intelligence tests are systematically biased against certain groups, the ability of individual IQ scores to predict an individual’s future performance on a wide range of mental tasks remains one of the most replicated results in all of psychology (Deary, 2012).
+    </section>
+  <h2 id=image>Image</h2>
+    <p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/President_Roosevelt_-_Pach_Bros.jpg" width="100" alt="TR">
+      This is a Theodore Roosevelt quote. Tell the browser how large the image is going to be (specify it in the tag) so that it knows before loading the contents how much space to reserve for the image. Otherwise there is going to be some jumping as the page is loaded, in particular when internet bandwidth is low.
+    </p>
+  <!-- comment -->
   </body>
+  <footer>This is the footer</footer>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/President_Roosevelt_-_Pach_Bros.jpg" width="100" alt="TR">
+  <div>
+    <p>
+      Back to top: <a href="#top">click here</a>
+    </p>
+  </div>
 </html>
