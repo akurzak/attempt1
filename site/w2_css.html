@@ -63,6 +63,36 @@
       .secret.brand {
         color: red;
       }
+      section li {
+        list-style: none;
+      }
+      a:link, a:visited {
+        text-decoration: none;
+        background-color: green;
+        border: 1px solid blue;
+        color: black;
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 1px;
+      }
+      a:hover, a:active {
+        background-color: red;
+        color: purple;
+      }
+      section li:nth-child(3) {
+        font-size: 24px;
+      }
+      section div:nth-child(odd) {
+        background-color: grey;
+      }
+      section div:hover:nth-child(5) {
+        font-size: 24px;
+      }
+      a:hover div:nth-child(5) {
+        font-size: 24px;
+      }
+      <!--descendant selector. every div that is inside a-->
     </style>
   </head>
   <header>German quality bread in Singapore</header>
@@ -75,8 +105,40 @@
       <p>You've already found the right website. Simply add the bread that you want, choose one-time order or subscription, and check out. You can pay easily with multiple payment options. The bread will be delivered to you at your desired time, warm, crispy, and crunchy!
       </p>
       <p class="highlight">All our <a class="brand">Cloud 9 Bakery</a> yeast is imported freshly from Siegburg, Northrhine-Westfalia, Germany.<p>
+    <h2>Ingredients</h2>
+        <ul>
+          <li>Flour</li>
+          <li>Yeast</li>
+          <li>Water</li>
+        </ul>
     <h2>Contact</h2>
       <div class="highlight">You can reach us at our mobile number via Whatsapp under <span id="main">+65 8750 2805</span>. Click here to connect.</div>
       <p class="secret"> Our <a class="secret brand">Cloud 9 Bakery</a> is located in Potong Pasir, in a secret underground location so our world-class recipe is not stolen.</p>
+    <h2>Our favourite breads</h2>
+      <section>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Rye_bread" target="_blank">Rye bread</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Multigrain_bread" target="_blank">Multigrain bred</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Soda_bread" target="_blank">Soda bred</a></li>
+        </ul>
+      </section>
+      <section>
+        <div>Bread 1</div>
+        <div>Bread 2</div>
+        <div>Bread 3</div>
+        <div>Bread 4</div>
+        <div>Bread 5</div>
+        <div>Bread 6</div>
+        <div>Bread 7</div>
+      </section>
+      <a>
+        <div>Bread 1</div>
+        <div>Bread 2</div>
+        <div>Bread 3</div>
+        <div>Bread 4</div>
+        <div>Bread 5</div>
+        <div>Bread 6</div>
+        <div>Bread 7</div>
+      </a>
   </body>
 </html>
